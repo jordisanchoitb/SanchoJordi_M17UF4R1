@@ -12,8 +12,6 @@ public class PatrolEnemy : MonoBehaviour
     public List<Transform> waypoints;
     public int currentWaypointIndex;
     public bool isSearching;
-    private int rotateAttempts = 0;
-    private int maxAttempts = 4;
 
     private void OnEnable()
     {
