@@ -2132,6 +2132,7 @@ GameObject:
   - component: {fileID: 1839919125}
   - component: {fileID: 1839919118}
   - component: {fileID: 1839919123}
+  - component: {fileID: 1839919129}
   - component: {fileID: 1839919122}
   - component: {fileID: 1839919128}
   - component: {fileID: 1839919127}
@@ -2249,7 +2250,7 @@ MonoBehaviour:
   target: {fileID: 1391036037}
   onRange: 0
   onAttackRange: 0
-  speed: 3
+  speed: 1.5
   currentNode: {fileID: 11400000, guid: 759c55da86f7eea42b8e1ed9fdf4a58f, type: 2}
   Nodes:
   - {fileID: 11400000, guid: e387dd0668821a24a9437dec8888c66e, type: 2}
@@ -2321,7 +2322,7 @@ MonoBehaviour:
   toleranceDistance: 0.1
   waypoints: []
   currentWaypointIndex: 0
-  lastViewPlayer: {x: 0, y: 0, z: 0}
+  isSearching: 0
 --- !u!114 &1839919128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2341,6 +2342,22 @@ MonoBehaviour:
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 8
+--- !u!208 &1839919129
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839919117}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 0
+  m_Extents: {x: 0.5, y: 1, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1986366797
 GameObject:
   m_ObjectHideFlags: 0

@@ -22,6 +22,11 @@ public class EnemyVision : MonoBehaviour
 
     private IEnumerator StopFollowingPlayer()
     {
+        if (!(GetComponent<Enemy>().health == GetComponent<Enemy>().maxHealth))
+        {
+            GetComponent<PatrolEnemy>().patrol.transform.position = player.transform.position;
+            GetComponent<PatrolEnemy>().isSearching = true;
+        }
         yield return new WaitForSeconds(timeToStopFollowingPlayer);
         playerInSight = false;
     }

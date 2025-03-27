@@ -19,14 +19,17 @@ public class Enemy : AEntity
         agent.speed = speed;
         GetComponent<EnemyVision>().player = target.transform;
     }
+
     public override void OnEnable()
     {
         base.OnEnable();
     }
+
     public override void Hurt(float damage)
     {
         base.Hurt(damage);
     }
+
     /*private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.CompareTag("Player"))
